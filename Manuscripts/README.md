@@ -5,6 +5,8 @@ This repository formalizes the transition from "Dark" variables to a Dynamic Met
 
 The Source Code of the Construct.
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18641401.svg)](https://doi.org/10.5281/zenodo.18641401)
+
 ### **Core Manuscripts**
 * [**Kinetic-Gravity Coupling (KGC)**](Manuscripts/Gravity_Kinetic_Coupling.pdf): Resolving the Genzel Paradox and the Metric Floor ($R^2=0.94$).
 * [**Law of Unified Mechanical Expansion (LUME)**](Manuscripts/Navarro_LUME.pdf): Resolving the Hubble Tension and Variable $c$.

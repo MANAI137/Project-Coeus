@@ -41,9 +41,9 @@ Resolves the **Hubble Tension** and **JWST "Impossible" Galaxy Paradox**.
 ---
 
 ## 📄 Current Manuscripts
-1. **Navarro_Kinetic_Gravity_Coupling.pdf**: Spatial stiffening, phase transitions, and rotation curve recovery.
+1. **Navarro_Network_G_IPP.pdf**: Spatial stiffening, phase transitions, and rotation curve recovery.
 2. **Navarro_Network_G.pdf**: Temporal modulation, expansion damping, and information velocity.
-3. **The Gospel V1.3.7**: The definitive Layman’s Summary and "Four Pillars" Narrative.
+3. **Navarro_Network_G_Supplement.pdf**: The definitive Layman’s Summary and "Four Pillars" Narrative.
 
 ## 🧪 Experimental Proposals
 The framework provides falsifiable targets for:

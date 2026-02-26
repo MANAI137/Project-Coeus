@@ -1,32 +1,58 @@
-# Project Coeus: The Unified Metric Stiffening Framework
+# Project Coeus: The Unified Metric Stiffening Framework V.1.0
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18641401.svg)](https://doi.org/10.5281/zenodo.18641401)
 
-This repository contains the definitive field equations and statistical validation for **Kinetic-Gravity Coupling (KGC)** and the **Law of Unified Mechanical Expansion (LUME)**.
+This directory contains the definitive field equations, theoretical derivations, and narrative summaries for **Kinetic-Gravity Coupling (KGC)** and the **Law of Unified Mechanical Expansion (Network G)**.
 
-## Executive Summary
-Project Coeus identifies the "Missing Mass" (Dark Matter) and "Missing Energy" (Dark Energy) anomalies as emergent properties of a dynamical spacetime metric. By anchoring gravitational response and information velocity to the local expansion scalar $\theta$, we resolve the core crises in modern cosmology without the need for undetected particles.
+## 🌌 Executive Summary
+Project Coeus identifies "Dark Matter" and "Dark Energy" anomalies not as missing particles, but as emergent properties of a **Dynamic Active Vacuum**. By anchoring gravitational response and information velocity to local energy density and the expansion scalar, we resolve the core crises in modern cosmology through the lens of **Vacuum Engineering**.
 
-### Key Breakthroughs
-* **Galactic Dynamics (KGC):** Replaces Dark Matter halos with a diffeomorphism-invariant metric response.
-  * **Verified Performance:** $R^2 = 0.9586$ (SPARC High-Ground Sample).
-  * **Core Identity:** $\gamma = -0.0605$ governs the "Plateau-Lock" of spiral galaxies.
-* **Cosmological Evolution (LUME):** Resolves the **Hubble Tension** and **JWST Maturity Paradox**.
-  * **Mechanism:** A disformal photon metric $\hat{g}^{(\gamma)}_{\mu\nu}$ creates a variable velocity of information $c(\theta)$.
-  * **Metric Impedance:** Explains the 9% discrepancy between Planck (CMB) and SH0ES (Local) measurements.
+---
+
+## 🏎️ The Four Pillars of Network G
+The framework operates as an **Active Handling System** for spacetime, governed by four mechanical principles:
+
+1. **Energy Density (The Mechanical State):** Vacuum "stiffening" (Phase Change) based on local matter concentration.
+2. **Expansion Damping (The Environmental Weather):** Rapid expansion acts as a "storm" that prevents vacuum grip, explaining the **Genzel Paradox**.
+3. **Network Neighbor Influence (The Traffic Flow):** Geodesic Interlocking between adjacent masses (Resolving outliers like **NGC 2841**).
+4. **Outside-In Resolution (The Racing Line):** Boundary conditions at the galactic radii dictate internal kinematics ($R^2 = 0.9561$).
 
 
 
-## Current Manuscripts
-1. **Navarro_Kinetic_Gravity_Coupling.pdf**: Spatial stiffening and rotation curves.
-2. **Navarro_LUME.pdf**: Temporal modulation and information velocity.
+---
 
-## Experimental Proposals
+## 🛠️ Key Breakthroughs
+
+### 1. Galactic Dynamics (The MagneRide Vacuum)
+Replaces Dark Matter halos with a diffeomorphism-invariant metric response.
+* **Verified Performance:** $R^2 = 0.9561$ (SPARC High-Ground Sample).
+* **Precision:** $\pm 18.25$ km/s RMSE across diverse morphologies.
+* **The Shatter Wall:** Identifies a physical "Bump Stop" limit to vacuum stiffening, geometrically matching the **Bullet Cluster** offset.
+
+
+
+### 2. Cosmological Evolution (The Odometer Paradox)
+Resolves the **Hubble Tension** and **JWST "Impossible" Galaxy Paradox**.
+* **The Paving Machine Logic:** High expansion rates in the early universe acted as a high-speed construction phase. Massive galaxies formed faster because the "machine" was running at a higher rate; we misinterpret their age today because our "odometer" is calibrated to the modern, slower expansion rate.
+* **Metric Impedance:** Explains the 9% discrepancy between Planck (CMB) and SH0ES (Local) measurements via a variable velocity of information.
+
+
+
+---
+
+## 📄 Current Manuscripts
+1. **Navarro_Kinetic_Gravity_Coupling.pdf**: Spatial stiffening, phase transitions, and rotation curve recovery.
+2. **Navarro_Network_G.pdf**: Temporal modulation, expansion damping, and information velocity.
+3. **The Gospel V1.3.7**: The definitive Layman’s Summary and "Four Pillars" Narrative.
+
+## 🧪 Experimental Proposals
 The framework provides falsifiable targets for:
-- High-redshift Gravitational Wave-Photon time lags ($z \gtrsim 2$).
-- Lyman-$\alpha$ forest effective optical-depth rescaling.
-- Trans-Neptunian precision clock frequency shifts.
+* **High-Redshift Damping:** Gravitational Wave-Photon time lags at ($z \gtrsim 2$).
+* **Local Saturated Phase:** Precision frequency shifts in Trans-Neptunian clock synchronization.
+* **The Shatter Limit:** Mapping the geometric "Bump Stop" in high-velocity cluster collisions.
 
 ---
 **Architect:** Miguel Antonio Navarro  
-**Methodology:** Human Architectural Intuition + AI Formalism (MAN Archive)
+**ORCID:** [0009-0009-5600-7985](https://orcid.org/0009-0009-5600-7985)  
+**Methodology:** Human Architectural Intuition + AI Formalism  
+**Status:** V.1.0 - Final Seal

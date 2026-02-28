@@ -12,7 +12,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # IPP V5 CONSTANTS
-MODULUS_PERSISTENCE = 0.062
+MODULUS_PERSISTENCE = 0.06113
 I_THETA_LOCAL = 4.8e-10  # z = 0
 I_THETA_Z2 = 1.2e-10     # z = 2 (Simulated Expansion Damping)
 REFF = 5.0               # kpc

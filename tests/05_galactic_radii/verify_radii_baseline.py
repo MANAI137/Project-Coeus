@@ -21,13 +21,15 @@ import os, io
 # 1. CONSTANTS (SPARC Standard)
 G_CONST = 4.301e-6 # (km/s)^2 * kpc / M_sun
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(BASE_DIR, "data")
+
 def load_pure_mrt(path, skip_lines):
     with open(path, "r", encoding="utf-8") as f:
         lines = [ln for ln in f.readlines()[skip_lines:] if ln.strip() and not ln.strip().startswith(('#', '|'))]
     return pd.read_csv(io.StringIO("".join(lines)), sep=r"\s+", engine="python")
 
 if __name__ == "__main__":
-    DATA_DIR = "./data"
     # Load mass models - ensure the path matches your structure
     mm_path = os.path.join(DATA_DIR, "sparc_mass_models.csv")
     mm = load_pure_mrt(mm_path, 25)

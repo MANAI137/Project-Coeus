@@ -18,7 +18,7 @@ from scipy.optimize import minimize_scalar
 # ---------------------------------------------------------
 # IPP ENGINE V5 CONSTANTS (Gospel Parity)
 # ---------------------------------------------------------
-MODULUS_PERSISTENCE = 0.062  # Alpha (Universal Modulus)
+MODULUS_PERSISTENCE = 0.06113  # Alpha (Universal Modulus)
 IMPEDANCE_SCALAR = 4.8e-10    # I_theta (Impedance Scalar)
 GAMMA = -0.0605              # Impedance Exponent
 G_SI = 6.67430e-11           # Gravitational Constant

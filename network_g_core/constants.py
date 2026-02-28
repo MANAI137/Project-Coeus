@@ -28,7 +28,7 @@ OM_PROXY    = 0.315
 OL_PROXY    = 0.685
 
 # --- Network G Postulate Parameters ---
-ALPHA      = 0.062              # Dimensionless coupling
+ALPHA      = 0.06113
 A_FLOOR    = 4.8e-10            # m/s^2 (Vacuum acceleration floor)
 
 # --- Local-stress Law (Galaxy Scale) ---

@@ -16,7 +16,7 @@ import pandas as pd
 # 1. SYSTEM LINKING
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
 try:
-    from network_g_core import engineV5 as engine
+    from network_g_core import engineV6 as engine
     from network_g_core import constants
     print(f"✅ SUCCESS: Network G Engine (V5.9.0) linked.")
 except ImportError:

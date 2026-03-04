@@ -14,7 +14,7 @@ import io, os, sys, time
 # 1. SYSTEM LINKING
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../../')))
 try:
-    from network_g_core import engineV5 as engine
+    from network_g_core import engineV6 as engine
     from network_g_core import constants as C
     print(f"✅ SUCCESS: EngineV5 linked with V15.8 Statistics Bridge.")
 except ImportError:

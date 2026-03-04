@@ -10,7 +10,7 @@
 import sys
 import numpy as np
 
-import network_g_core.engineV5 as engine
+import network_g_core.engineV6 as engine
 from network_g_core import constants
 
 ALLOWED_KEYS = {"R_kpc", "Reff_kpc", "Vgas", "Vdisk", "Vbul", "L36", "MHI", "ups", "redshift"}

@@ -11,6 +11,7 @@
 # 3. ANCHOR LOGIC: Static normalization (logI_acc: 0.0250, logI_comp: 0.3010).
 # 4. VELOCITY LIMITS: V_SHATTER (1000 km/s) & V_CMB (371 km/s) Invariants.
 # =============================================================================
+import numpy as np
 
 # --- Universal Constants (SI) ---
 G_SI       = 6.67430e-11        # m^3 kg^-1 s^-2
@@ -46,3 +47,16 @@ PHI_SHIELDING_THRESHOLD = VACUUM_PHASE_THRESHOLD  # Legacy alias
 
 # --- Dimensional Sanity Assertions ---
 assert MPC_TO_M > 0 and KPC_TO_M > 0 and VREF_MS > 0 and RREF_M > 0, "Reference scales must be positive."
+# --- Project Coeus Unification (V1.1) ---
+ALPHA_FS    = 1.0 / 137.035999    # Fine Structure Constant
+ALPHA_0     = ALPHA_FS * (8.0 * np.pi / 3.0)  # Volumetric Resonance Ratio
+S_IMPEDANCE = (16.0 / 9.0) * ALPHA_FS         # Impedance Scaling Constant (~0.01297)
+
+# --- Universal Cosmological Anchors ---
+H0_LOCAL_BASELINE = 73.0                      # SH0ES Local Baseline (km/s/Mpc)
+H0_GEOMETRIC_MEAN = 69.8978                   # Resonant Universal Anchor (km/s/Mpc)
+H0_CMB_PLANCK     = 67.44                     # Planck 2018 Reference (km/s/Mpc)
+
+# --- Physical Thresholds (SI Mapped) ---
+THRESHOLD_SI = 287.35                         # M_sun/pc^2 (0.60 kg/m^2 Critical Threshold)
+V_SHATTER    = 1000.0                         # km/s (Relativistic Shatter Wall)

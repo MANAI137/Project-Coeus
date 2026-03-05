@@ -29,10 +29,12 @@ OM_PROXY    = 0.315
 OL_PROXY    = 0.685
 
 # --- Network G Postulate Parameters ---
+# ALPHA corresponds to the Navarro-Fine Structure Identity (alpha_0)
 ALPHA      = 0.06113
-A_FLOOR    = 4.8e-10            # m/s^2 (Vacuum acceleration floor)
+A_FLOOR    = 4.8e-10            # m/s^2 (Vacuum acceleration floor / I_theta)
 
 # --- Local-stress Law (Galaxy Scale) ---
+# GAMMA represents the 2nd-order geometric correction for disk thickness
 GAMMA      = -0.0605            # Stress exponent
 
 # --- Local-stress Normalization (Acceleration Reference) ---
@@ -47,16 +49,20 @@ PHI_SHIELDING_THRESHOLD = VACUUM_PHASE_THRESHOLD  # Legacy alias
 
 # --- Dimensional Sanity Assertions ---
 assert MPC_TO_M > 0 and KPC_TO_M > 0 and VREF_MS > 0 and RREF_M > 0, "Reference scales must be positive."
+
 # --- Project Coeus Unification (V1.1) ---
+# Formal Proof Anchors: Linking coupling to metric response
 ALPHA_FS    = 1.0 / 137.035999    # Fine Structure Constant
-ALPHA_0     = ALPHA_FS * (8.0 * np.pi / 3.0)  # Volumetric Resonance Ratio
+ALPHA_0     = ALPHA_FS * (8.0 * np.pi / 3.0)  # Volumetric Resonance Ratio proof
 S_IMPEDANCE = (16.0 / 9.0) * ALPHA_FS         # Impedance Scaling Constant (~0.01297)
 
 # --- Universal Cosmological Anchors ---
+# Used for Pillar 1 & 2 validation in 06_law_vi
 H0_LOCAL_BASELINE = 73.0                      # SH0ES Local Baseline (km/s/Mpc)
 H0_GEOMETRIC_MEAN = 69.8978                   # Resonant Universal Anchor (km/s/Mpc)
 H0_CMB_PLANCK     = 67.44                     # Planck 2018 Reference (km/s/Mpc)
 
 # --- Physical Thresholds (SI Mapped) ---
+# Anchoring the Outside-In Resolution protocol
 THRESHOLD_SI = 287.35                         # M_sun/pc^2 (0.60 kg/m^2 Critical Threshold)
 V_SHATTER    = 1000.0                         # km/s (Relativistic Shatter Wall)

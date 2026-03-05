@@ -1,6 +1,6 @@
 # Project Coeus: The Unified Metric Stiffening Framework (V.1.0)
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18641401.svg)](https://doi.org/10.5281/zenodo.18641401)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18641400.svg)](https://doi.org/10.5281/zenodo.18641400)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 This repository contains the definitive field equations, theoretical derivations, and numerical implementations for **Impedance Phase Persistence (IPP)** and the **Law of Vacuum Impedance (Network G)**. 

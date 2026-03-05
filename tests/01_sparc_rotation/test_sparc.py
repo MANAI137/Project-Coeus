@@ -21,7 +21,7 @@ except ImportError:
     print("❌ ERROR: Physics engine missing.")
     sys.exit(1)
 
-DOI = "10.5281/zenodo.18641401"
+DOI = "10.5281/zenodo.18641400"
 ORCID = "0009-0009-5600-7985"
 
 # CONFIG: THE HIGH-GROUND GATES

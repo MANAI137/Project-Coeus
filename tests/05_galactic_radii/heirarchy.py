@@ -15,7 +15,7 @@ PROJECT_ROOT = os.path.abspath(os.path.join(BASE_DIR, '../../'))
 sys.path.insert(0, PROJECT_ROOT)
 
 try:
-    from network_g_core import engineV5 as engine
+    from network_g_core import engineV6 as engine
     print(f"✅ SUCCESS: Network G Engine V5 linked. Initiating Strict Blind Audit.")
 except ImportError:
     sys.exit(1)

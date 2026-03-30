@@ -1,0 +1,5 @@
+__pycache__/
+.venv/
+tests/01_sparc_rotation/experimental/
+tests/07_metric_stretch/data/data_untracked/
+

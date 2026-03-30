@@ -150,3 +150,44 @@ if __name__ == "__main__":
     print(f"TOTAL POINTS PROCESSED:        {len(y_p)}")
     print(f"COMPLETION TIME:               {time.time()-start_time:.1f}s")
     print("="*72)
+
+
+   # 5. STANDARDIZED FORENSIC AUDIT (Apples-to-Apples with MOND)
+    # ----------------------------------------------------------
+    residuals_coeus = np.abs(y_t - y_p)
+    threshold_coeus = np.percentile(residuals_coeus, 95)
+    outlier_indices_coeus = np.where(residuals_coeus >= threshold_coeus)[0]
+
+    print("\n" + "!"*50)
+    print(f"FORENSIC AUDIT: TOP 5% COEUS OUTLIERS (Error > {threshold_coeus:.2f} km/s)")
+    print("!"*50)
+    print(f"{'Galaxy Index':<15} | {'Observed V':<12} | {'Coeus Pred':<12} | {'Residual':<10}")
+    print("-" * 50)
+    
+    # Iterate through the top 20 outliers to match the MOND output format
+    for idx in outlier_indices_coeus[:20]: 
+        print(f"{idx:<15} | {y_t[idx]:<12.2f} | {y_p[idx]:<12.2f} | {residuals_coeus[idx]:<10.2f}")
+
+    # 6. COEUS CLEANED AUDIT (Minus Top 5% Outliers)
+    # ----------------------------------------------------------
+    # Strategy: Strip the 'Baryonic Noise Floor' to reveal the Manifold Signal.
+
+    # Identify clean mask based on the Coeus residuals calculated in Section 5
+    clean_mask_coeus = residuals_coeus < threshold_coeus
+    y_p_clean, y_t_clean, w_clean = y_p[clean_mask_coeus], y_t[clean_mask_coeus], w[clean_mask_coeus]
+
+    # Re-calculate Cleaned Statistics for Coeus
+    ss_res_clean = np.sum(w_clean * (y_t_clean - y_p_clean)**2)
+    y_mean_clean = np.average(y_t_clean, weights=w_clean)
+    ss_tot_clean = np.sum(w_clean * (y_t_clean - y_mean_clean)**2)
+    
+    r2_clean = 1 - (ss_res_clean / ss_tot_clean)
+    rmse_clean_weighted = np.sqrt(np.sum(w_clean * (y_t_clean - y_p_clean)**2) / np.sum(w_clean))
+
+    print("\n" + "="*72)
+    print(f"COEUS CLEANED BENCHMARK (95% SUBSAMPLE)")
+    print("-" * 72)
+    print(f"CLEANED WEIGHTED R² SCORE: {r2_clean:.4f}")
+    print(f"CLEANED WEIGHTED RMSE:     {rmse_clean_weighted:.2f} km/s")
+    print(f"POINTS REMOVED:            {len(y_p) - len(y_p_clean)}")
+    print("="*72)
